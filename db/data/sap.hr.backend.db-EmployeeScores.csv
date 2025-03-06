@@ -1,0 +1,11 @@
+ID,employeeId,employeeName,employeeDepartment,employeeRole,userScores,userWeight,departmentWeight,departmentScore,totalScore,expanse,performanceTitle,title,period
+1,E1001,Ahmet Yılmaz,Satış,Yönetici,85.5,10,5,75.2,80.1,Seyahat,Çok İyi,UZMAN,Q1-2024
+2,E1002,Merve Demir,Bilişim,Geliştirici,78.3,8,4,70.0,74.5,Ekipman,İyi,UZMAN,Q1-2024
+3,E1003,Elif Kaya,İnsan Kaynakları,Uzman,90.2,9,6,88.4,89.0,Eğitim,Harika,UZMAN,Q1-2024
+4,E1004,Mehmet Çelik,Finans,Analist,65.7,7,3,60.5,62.1,Seyahat,Geliştirilmeli,BAKIM UZMANI,Q1-2024
+5,E1005,Deniz Özkan,Pazarlama,Uzm.,80.0,8,4,75.0,78.2,Yazılım,İyi,UZMAN,Q1-2024
+6,E1006,Zeynep Aslan,Operasyon,Süpervizör,88.9,10,5,85.3,86.5,Bakım,Çok İyi,UZMAN,Q1-2024
+7,E1007,Mustafa Arslan,Mühendislik,Mühendis,92.0,9,5,89.1,90.0,Ekipman,Mükemmel,UZMAN,Q1-2024
+8,E1008,Fatma Şahin,Destek,Teknisyen,70.3,6,3,65.7,68.0,Araçlar,Orta,BAKIM UZMANI,Q1-2024
+9,E1009,Ali Kurt,Satış,Satış Temsilcisi,75.6,7,3,72.0,73.8,Seyahat,İyi,UZMAN,Q1-2024
+10,E1010,Hülya Çoban,Bilişim,Danışman,85.1,9,4,80.7,82.0,Eğitim,Çok İyi,UZMAN,Q1-2024
