@@ -1,7 +1,6 @@
 const { array } = require('@sap/cds');
 const { tx } = require('@sap/cds');
 const cds = require('@sap/cds');
-const { response } = require('express');
 
 
 module.exports = cds.service.impl( async srv => {
@@ -19,15 +18,16 @@ module.exports = cds.service.impl( async srv => {
     
 
     srv.after('CREATE', Employee, async(req) => {
+        
+        const tx = db.tx();
         try {
-            const payload = req.data;
-            const tx = db.tx();
+            const payload = req;
             await tx.run(INSERT.into(Employee).entries(payload));
             tx.commit();
-            response.status(201).send("Records succesfully created");
+            //response.status(201);
         } catch (error) {
-            response.send(error);
             tx.rollback();
+            //response.send(error);
         }
 
     });
@@ -51,8 +51,8 @@ module.exports = cds.service.impl( async srv => {
     // });
     //nested read added
     srv.on('READ', Employee, async(req, res) => {
+        const tx = db.tx();
         try {
-            const tx = db.tx();
             let expandParams = [];
             
             req.query.SELECT.columns.forEach(item => {
@@ -89,7 +89,7 @@ module.exports = cds.service.impl( async srv => {
 
             return result;
         } catch (error) {
-            response.send(error);
+            //response.send(error);
         }
     });
 })
