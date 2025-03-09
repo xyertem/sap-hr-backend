@@ -31,24 +31,24 @@ module.exports = cds.service.impl( async srv => {
         }
 
     });
-    srv.after('DELETE', Employee, async() => {
-        try {
-            const tx = db.tx();
+    // srv.after('DELETE', Employee, async() => {
+    //     try {
+    //         const tx = db.tx();
             
-        } catch (error) {
+    //     } catch (error) {
             
-        }
+    //     }
 
-    });
-    srv.before('UPDATE', Employee, async() => {
-        try {
-            const tx = db.tx();
+    // });
+    // srv.before('UPDATE', Employee, async() => {
+    //     try {
+    //         const tx = db.tx();
             
-        } catch (error) {
+    //     } catch (error) {
             
-        }
+    //     }
 
-    });
+    // });
     //nested read added
     srv.on('READ', Employee, async(req, res) => {
         try {
