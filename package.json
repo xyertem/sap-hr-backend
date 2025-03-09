@@ -30,7 +30,14 @@
       "[hybrid]": {
         "db": "hana"
       },
-      "auth": "xsuaa"
+      "auth": "xsuaa",
+      "db": {
+        "kind": "hana",
+        "acquireTimeoutMillis": 5000,
+          "max": 1400,
+          "min": 100,
+          "fifo": true
+      }
     }
   }
 }
